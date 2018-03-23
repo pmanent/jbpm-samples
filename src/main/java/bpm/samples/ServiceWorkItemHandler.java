@@ -32,6 +32,7 @@ public class ServiceWorkItemHandler implements WorkItemHandler {
 	    System.out.println("to: "+to);
 	    System.out.println("message: "+message);
 	    System.out.println("priority: "+priority);
+	    //<bpmn2:task id="Task_3" name="WorkItem" tns:taskName="ServiceWorkItemHandler">
 
 	    // notify manager that work item has been completed
 	    manager.completeWorkItem(workItem.getId(), null); 

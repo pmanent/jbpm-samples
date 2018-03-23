@@ -9,5 +9,15 @@
       "Priority" : new StringDataType(),
     ],
     "displayName" : "ServiceWorkItemHandler"
+  ],
+  [
+    "name" : "Human Task",
+    "parameters" : [
+      "Message" : new StringDataType(),
+      "From" : new StringDataType(),
+      "To" : new StringDataType(),
+      "Priority" : new StringDataType(),
+    ],
+    "displayName" : "Human Task"
   ]
 ]
