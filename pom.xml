@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>samples</groupId>
+  <artifactId>bpm</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Samples</name>
+  <description>Sample project for bpm</description>
+    <properties>
+    <runtime.version>7.6.0.Final</runtime.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>${runtime.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-test</artifactId>
+      <version>${runtime.version}</version>
+    </dependency>
+    <dependency>
+	  <groupId>org.kie.server</groupId>
+	  <artifactId>kie-server-client</artifactId>
+	  <version>${runtime.version}</version>
+	</dependency>
+	<!-- Logging -->
+	<dependency>
+	  <groupId>ch.qos.logback</groupId>
+	  <artifactId>logback-classic</artifactId>
+	  <version>1.1.2</version>
+	</dependency>
+	<!-- Drools Commands -->
+	<dependency>
+	  <groupId>org.drools</groupId>
+	  <artifactId>drools-compiler</artifactId>
+	  <scope>runtime</scope>
+	  <version>${runtime.version}</version>
+	</dependency>
+		
+  </dependencies>
+</project>
